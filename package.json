@@ -1,0 +1,23 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "A full-stack todolist app to practice web dev",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch --env-file=.env src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Or4ng3-3/TodoList.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Or4ng3-3/TodoList/issues"
+  },
+  "homepage": "https://github.com/Or4ng3-3/TodoList#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "type": "module"
+}
