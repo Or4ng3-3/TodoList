@@ -1,25 +1,16 @@
 import { Router } from 'express'
+import { ReminderController } from '../controllers/reminderController.js';
 
 const router = Router();
 
-router.get('/', (req, res) => {
-    res.send('Get all reminders')
-}) 
+router.get('/', ReminderController.getAllReminders) 
 
-router.get('/:id', (req, res) => {
-    res.send('Get single reminder by id')
-}) 
+router.get('/:id', ReminderController.getReminderById) 
 
-router.post('/', (req, res) => {
-    res.send('create a new reminder')
-}) 
+router.post('/', ReminderController.createReminder) 
 
-router.patch('/:id', (req, res) => {
-    res.send('update a reminder')
-}) 
+router.patch('/:id', ReminderController.updateReminder) 
 
-router.delete('/:id', (req, res) => {
-    res.send('delete a reminder')
-}) 
+router.delete('/:id', ReminderController.deleteReminder) 
 
 export default router;
